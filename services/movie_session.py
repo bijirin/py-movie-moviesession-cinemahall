@@ -36,8 +36,8 @@ def get_movie_session_by_id(
 def update_movie_session(
         session_id: int,
         show_time: dt.datetime,
-        movie_id: int=0,
-        cinema_hall_id: int=0
+        movie_id: int = 0,
+        cinema_hall_id: int = 0
 ) -> None:
     movie_session = MovieSession.objects.get(id=session_id)
     movie_session.show_time = show_time
@@ -51,4 +51,3 @@ def delete_movie_session_by_id(
 ) -> None:
     movie_session = MovieSession.objects.get(id=session_id)
     movie_session.delete()
-

@@ -21,8 +21,8 @@ def get_movie_by_id(
 def create_movie(
         movie_title: str,
         movie_description: str,
-        genre_ids: list=None,
-        actors_ids: list=None,
+        genre_ids: list = None,
+        actors_ids: list = None,
 ) -> None:
     if genre_ids is None:
         genre_ids = []
